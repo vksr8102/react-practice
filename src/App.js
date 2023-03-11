@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React, { useState } from 'react'
+import'./App.css';
+import BasicForm from './Components/BasicForm';
+import CompA from './Components/CompA';
+import FetchApiByHooks from './Components/FetchApiByHooks';
+import Hooks from './Components/Hooks';
+import UnconditionalState from './Components/login-form/UnconditionalState';
+import Test from './Components/test';
+import UseEffectState from './Components/UseEffectState';
+import UseReduser from './Components/UseReduser';
+import UseStateArray from './UseStateArray';
+import UseStateObject from './UseStateObject';
+const App = () => {
+//   const [name, setName] = useState("React js Titorial")
+//  const  changeName =()=>{
+//     if(name === "React js Titorial"){
+//       setName("Vikash kumar")
+//     }
+//     else{
+//       setName("React js Titorial")
+//     }
+//   }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <h1>{name}  </h1>
+      <button className='btn ' onClick={changeName}>Click Me Please</button> */}
+      {/* <UseStateArray/> */}
+    <UseStateObject/>
+    <BasicForm/>
+    <UseEffectState/>
+    <Hooks/>
+    {/* <FetchApiByHooks/> */}
+    <UnconditionalState/>
+    <UseReduser/>
+    {/* <CompA/> */}
+    <Test/>
+
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+
+
+

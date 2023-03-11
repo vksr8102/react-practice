@@ -1,38 +1,110 @@
-.App {
+html{
+  font-size: 62.5%;
+}
+body {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #34495e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: aliceblue;
+  font-family: "Releway",sans-serif;
+}
+.App{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App.link{
+  color: #8be3fb;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1{
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+.h1Style{
+  display: flex;
+  justify-content: center;
+  background: border-box;
+  min-width: 20rem;
+  width: 60rem;
+  padding: 2rem 2rem;
+  background-color:azure;
+  color: #2980b9;
+  border-radius: 5em;
+  font-size: 2rem;
+  box-shadow: 0rem 2rem 2rem -1.5rem #000;
+  margin-top: 2rem;
+}
+.btn{
+  min-width: 10rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: auto;
+  margin-top: 2rem;
+  border: none;
+  outline: none;
+  padding: 0.8rem 1.5rem;
+  background-color:#2980b9;
+  color: aliceblue;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  font-size: 20px;
+}
+.btndiv{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+.btn:hover{
+  background-color: #0e202c;
+}
+/* Login Form */
+form{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-content: center;
+  background-color:#29b984;
+  padding:6rem 3rem ;
+  margin: 3rem;
+  font-size: 20px;
+  min-width: 30rem;
+border-radius: 0.3rem;
+box-shadow: 0rem 2rem 2rem -1.5rem rgb(184, 160, 160);
+}
+form div{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem; 
+}
+form div input{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: border-box;
+  padding: 0.5rem .5rem;
+  background-color:azure;
+  color: #2980b9;
+  border-radius: 5em;
+  margin-top: 2rem;
+  border: 1px solid #fff;
+}
+.showData{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: border-box;
+  background-color: #29b984;
+  min-width: 10rem;
+  width: 50rem;
+  font-size: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
